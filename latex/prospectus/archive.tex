@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage{amsthm}
+\usepackage{tikzit}
+\input{prospectus.tikzstyles}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+\newtheorem{lemma}{Lemma}[chapter] % reset lemma numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+
+\begin{document}
+
+\begin{defn}
+    Let $G$ be a maximally connected planar graph with some fixed embedding in the plane
+\end{defn}
+
+\begin{defn}
+  Let $S$ denote some arbitrary chordless cycle
+\end{defn}
+
+\begin{defn}
+  Let $S_{X}$ denote a specific induced chordless cycle of $G$, where $X$ is some sequence of natural numbers.
+\end{defn}
+
+\begin{defn}
+  Let $S_0$ denote the outer cycle of $G$
+\end{defn}
+
+\begin{defn}
+  Let $T_{..., i}$ denote the induced subgraph made up of vertices a minimum distance of 1 from some point in $S_{..., i}$ within the inner region of $S_{..., i}$.
+\end{defn}
+
+\begin{defn}
+  Let $S_{..., i, j}$ denote the jth chordless cycle in $T_{..., i}$
+\end{defn}
+
+\begin{defn}
+  Let $S(T)$ denote a chordless cycle with the same number of vertices as $T$
+\end{defn}
+
+\begin{defn}
+  Let $J(S_a, S_b)$ denote the set of sets of all possible edges formed by a vertex in a chorldess cycle $S_a$ and a chordless cycle $S_b$, where $S_b$ sits in the interior region of $S_a$, such that the region between the two cycles $S_a$ and $S_b$ is maximally planar connected
+\end{defn}
+
+\begin{defn}
+  Let $C_4(G)$ denote the set of unique possible 4 colorings of a graph $G$ such that no two points share the same color
+\end{defn}
+
+\begin{defn}
+  Let $C_4(G, g)$ denote the set of unique possible 4 colorings of an induced subgraph $g$ within a graph $G$
+\end{defn}
+
+\ctikzfig{G_def}
+\caption{
+  $G$ - Question marks denote an arbitrary collection of nodes and edges within the selected region
+}
+
+\ctikzfig{S0_def}
+\caption{S_0}
+
+\ctikzfig{T0_def}
+\caption{T_0}
+
+\ctikzfig{S00_def}
+\caption{S_{0, 0}}
+
+\ctikzfig{S01_def}
+\caption{S_{0, 1}}
+
+\ctikzfig{S02_def}
+\caption{S_{0, 2}}
+
+\ctikzfig{T00_def}
+\caption{T_{0, 0}}
+
+\ctikzfig{S000_def}
+\caption{S_{0, 0, 0}}
+
+\ctikzfig{S001_def}
+\caption{S_{0, 0, 1}}
+
+\ctikzfig{S002_def}
+\caption{S_{0, 0, 2}}
+
+\ctikzfig{S003_def}
+\caption{S_{0, 0, 3}}
+
+\begin{lemma}
+  The set of valid colorings of $S_{..., i} \cup T_{..., i}$ using 4 colors such that $S_{..., i}$ is colorable with 3 colors includes every unique combination of unique 3 color colorings of $S_{.., i, j} \in T_{..., i}$
+\end{lemma}
+
+This lemma is false. Can provide counter examples.
+
+\begin{lemma}
+  All uniuqe valid 3 colorings of $S_{..., i, j}$ can used to color $T_{..., i}$ such that $T_{..., i}$ uses only 3 colors
+\end{lemma}
+
+This is true. Rough proof is you can start at one cycle in the tree, and then work your way down the tree using the colors of the shared edge to inform the coloring of the next cycle.
+
+\section{Problem with trying to do induction by making the graph within the interior region of a chordless cycle maximally planar}
+
+In the original approach to the problem, we were trying to prove that, in a maximally planar graph, if points a minimum distance of 1 from the outer cycle can all be colored with 3 colors, than the entire graph can be colored with 4 colors. In the induced subgraph made up of points a minimum distance of 1 from the outer cycle, there will be chordless cycles, each of which may have vertices in their interior region, and those chordless cycles may have 3 or more vertices. In the case when such a chordless cycle has more than 3 vertices, we were wondering what would happen if we were to add edges such the induced graph made up of this chordless cycle and the vertices in it's interior region became maximally planar. If we do this, however, we do not just have to prove that this subgraph is colorable with 4 colors in the manner in which we proved for the first graph. We also have to prove that the points in the chordless cycle from which this graph was formed are colorable with only 3 colors. This is not always possible (provide counter example)
+
+\section{Revised Strategy}
+
+If we can determine what the minimum number of possible colorings for every $S_{..., i, j}$ is, I think we can determine what the minimum number of possible colorings for every $S_{..., i}$ is. We might be able to prove that there is always an intersection between the set of possible colorings of a $S_{..., i}$ based on edges it forms with the cycle it sits inside of and the minimum set of possible colorings of $S_{..., i}$ given anything that sits inside $S_{..., i}$, provided we're always trying to minimize the number of possible colorings at each step.
+
+\section{Formula for Disctinct Colorings}
+
+\displaystyle\sum_{j=0}^{n-2} 3^{n-2-i}(-1)^{n-j}
+
+\end{document}

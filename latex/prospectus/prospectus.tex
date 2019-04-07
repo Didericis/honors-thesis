@@ -1,0 +1,115 @@
+\documentclass{report}
+\usepackage{amsthm}
+\usepackage{tikzit}
+\input{prospectus.tikzstyles}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+\newtheorem{lemma}{Lemma}[chapter] % reset lemma numbering for each chapter
+\newtheorem{q}{Question}[chapter] % reset lemma numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+
+\def\author{Eric Bauerfeld}
+
+\def\degree{BA in Mathematics}
+\def\deptname{Mathematics}
+
+\def\submissiondate{\today}
+\def\completiondate{December 2019}
+
+\def\supervisor{Professor Joe Fields}
+\def\supertitleone{Professor of Mathematics}
+
+\def\readerone{Professor Braxton Carrigan}
+\def\readeronetitleone{Professor of Mathematics}
+
+\def\readertwo{Professor Val Pinciu}
+\def\readertwotitleone{Professor of Mathematics}
+
+\begin{document}
+
+\bibliographystyle{plain}
+\pagestyle{empty}
+\markboth{{\sc thesis proposal}}{{\sc thesis proposal}}
+
+\begin{center}
+\vspace{.5in}
+{\Large \bf An Exporation of Distance Labellings and Colorings of Maximally Planar Graphs \\}
+\vspace{.25in}
+{\Large \bf By \\ }
+\vspace{.25in}
+{\Large \bf \author}
+
+\vspace{.5in}
+
+{\small \bf
+  An Honors Thesis Prospectus Submitted to the Department of \deptname \\}
+
+\vspace{.5in}
+
+{\small \bf
+  Southern Connecticut State University \\}
+{\small \bf
+  New Haven, Connecticut \\}
+{\small \bf
+  April, 2019 \\}
+
+\end{center}
+
+\end{center}
+
+\newpage
+
+\vspace{.75in}
+\section*{Background and Justification for Study}
+
+The ways in which planar graphs can be colored is a historically important area of graph theory. The four color theorem, which states that any planar graph can be colored such that no 2 adjacent vertices share the same color using a set of only 4 colors, helped motivate a great deal of development in the field. The first proof of the four color theorem was discovered by Appel and Haken in 1976 and involved reducing the set of all planar graphs to a finite set of unavoidable configurations that were then checked for contraditions via a computer. In 1994, Robertson et al presented a great improvement to the proof that reduced the set of unavoidable configurations to 633, but the proof uses the same general approach and is still reliant on computers. This proof, along with many other coloring theorems applicable to planar graphs, is reliant on Euler's formula, which can be used to determine whether an assertion about the number of vertices, edges, and faces of a planar graph contradicts the formula $v - e + f = 2$. That particular direction has proven fruitful and has advanced to a point where meaningful contribution is difficult without experience that this author has not yet obtained. Instead, this paper will explore whether distance labellings might be used to characterize planar graphs in a way that lends itself to inductive claims about planar graph colorings.
+
+\vspace{.75in}
+\section*{Review of Literature}
+
+A review of relevant literature was obtained primarily through two sources: "Four Colors Suffice" by Robin Wilson and "Handbook of Combinatorics, Volume I" by Graham, Grotsche, and Lovasz. "Four Colors Suffice" presented a narrative overview of the history of the four color theorem and detailed the evolution of the existing proof. In particular, attempts at an inductive proof related to characterizing the graph in terms of some sort of distance labelling were looked for. The book stated that Tait attempted a proof by induction, but it did not involve distance labelling and was concerned with coloring the edges of a cycle that would go through every vertex in the graph once (102-105). Weirnecke attempted a proof along the same lines (147). No explicit mention of approaches that used distance labels was found. The section named "Coloring, Stable Sets and Perfect Graphs" of "Handbook of Combinatorics" was surveyed for any theorems related to distance labelling. Theorem 2.4 relates to the distance of circuits and a means of describing "unique" colorings that is relevant to the approach this paper will pursue, but does not appear to be directly relevant. A number of theorems can be found that state alternative wasy of stating the 4 color theorems that might be useful when combined with the method to be explored.
+
+\vspace{.75in}
+\section*{Research}
+
+This research will be based around the following theorems, definitions and questions:
+
+\begin{thm}
+Assume a maximally planar graph $G$ with a fixed embedding in the plane, let $\lambda: V(G) \mapsto \mathbb N$ be the minimum distance between $v \in V(G)$ and some point on the outer cycle of $G$, and let $G_d$ be the induced graph of $G_d$ such that  $\{ v \in V(G), \lambda(v) = d \} = V(G_d)$. Then the inner dual of $G_d$ will be a forest, $G_d$ will be within the interior region of a chordless cycle in $G_{d-1}$, and any two chordless cycles within $G_d$ share at most 1 edge and 2 vertices.
+\end{thm}
+
+\begin{defn}
+Let the distinct coloring polynomial $P_{distinct}(G, k)$ be the coloring polynomial of $G$ using $k$ colors minus the number of colorings that can be obtained by swapping the color assignments of vertices assigned to color A to color B.
+\end{defn}
+
+\begin{thm}
+If $L_n$ is a path of length $n$, then
+\[
+  P_{distinct}(L_n, 4) = \left\{\begin{array}{lr}
+  1 & n < 3\\
+  \displaystyle\sum_{i=0}^{n-3} 3^n + 1, & n \geq 3 \\
+  \end{array}\right
+\]
+\begin{equation}
+\end{equation}
+\end{thm}
+
+\begin{thm}
+If $S_n$ is a chordless cycle of length $n >= 3$, then
+
+\begin{equation}
+P_{distinct}(S_n, 4) = \displaystyle\sum_{j=0}^{n-2} (\displaystyle\sum_{i=0}^{j+1} 3^{n-i-1}(-1)^{i}) + (1 - (-1)^{n-1})/2
+\end{equation}
+\end{thm}
+
+\begin{thm}
+Assume a cycle of $S_0$ of length $m$ and a cycle $S_1$ of length $n$, where all $v \in V(S_1)$ are within the interior region formed by $S_0$. Given any arbitrary collection of edges between $S_0$ and $S_1$ such that the region between $S_0$ and $S_1$ is maximally planar, and we call the resulting graph $G$ the minimimum value of $P_{distinct}(S_0, 4)$ is
+
+\end{thm}
+
+
+\end{document}

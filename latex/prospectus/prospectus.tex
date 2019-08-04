@@ -3,10 +3,13 @@
 \usepackage{tikzit}
 \input{prospectus.tikzstyles}
 
+
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
 \newtheorem{lemma}{Lemma}[chapter] % reset lemma numbering for each chapter
 \newtheorem{q}{Question}[chapter] % reset lemma numbering for each chapter
+
+\linespread{2}
 
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
@@ -17,27 +20,15 @@
 \def\degree{BA in Mathematics}
 \def\deptname{Mathematics}
 
-\def\submissiondate{\today}
-\def\completiondate{December 2019}
-
-\def\supervisor{Professor Joe Fields}
-\def\supertitleone{Professor of Mathematics}
-
-\def\readerone{Professor Braxton Carrigan}
-\def\readeronetitleone{Professor of Mathematics}
-
-\def\readertwo{Professor Val Pinciu}
-\def\readertwotitleone{Professor of Mathematics}
-
 \begin{document}
 
-\bibliographystyle{plain}
+
 \pagestyle{empty}
 \markboth{{\sc thesis proposal}}{{\sc thesis proposal}}
 
 \begin{center}
 \vspace{.5in}
-{\Large \bf An Exporation of Distance Labellings and Colorings of Maximally Planar Graphs \\}
+{\Large \bf An Exploration of Distance Labeling and Colorings of Maximally Planar Graphs \\}
 \vspace{.25in}
 {\Large \bf By \\ }
 \vspace{.25in}
@@ -66,47 +57,44 @@
 \vspace{.75in}
 \section*{Background and Justification for Study}
 
-The ways in which planar graphs can be colored is a historically important area of graph theory. The four color theorem, which states that any planar graph can be colored such that no 2 adjacent vertices share the same color using a set of only 4 colors, helped motivate a great deal of development in the field. The first proof of the four color theorem was discovered by Appel and Haken in 1976 and involved reducing the set of all planar graphs to a finite set of unavoidable configurations that were then checked for contraditions via a computer. In 1994, Robertson et al presented a great improvement to the proof that reduced the set of unavoidable configurations to 633, but the proof uses the same general approach and is still reliant on computers. The existing proof is reliant on Euler's formula, which can be used to determine whether an assertion about the number of vertices, edges, and faces of a planar graph contradicts the formula $v - e + f = 2$. Instead of utilizing an extension of Euler's formula, this paper will explore whether distance labellings might be used to characterize planar graphs in a way that lends itself to inductive claims about planar graph colorings.
+Many developments in graph theory can be traced back to the four color theorem, which states that any planar graph can be colored with 4 colors such that no 2 adjacent vertices share the same color \cite[p. 237]{hoc}. An accepted proof was published by Appel and Haken in 1976 that involved reducing the set of all planar graphs to a finite set of 1936 irreducible configurations, then checking whether each graph in that set was 4 colorable \cite{proof}. This was followed by an improvement by Robertson, Sanders and Seymor in 1997 that reduced the set of unavoidable configurations to 633 \cite{proof2}. Euler's formula, which states that every planar graph must satisfy the equation $v - e + f = 2$, where $v$ refers to the number of vertices, $e$ refers to the number of edges, and $f$ refers to the number of faces, was used in both proofs. Attempts at a proof simple enough to be checked by a human have been attempted, but there is still no known proof that does not require the use of computers. This paper will attempt to explore approaches to the problem that are not reliant on a derivation of Euler's formula or irreducible configurations in the hopes of obtaining a proof based on induction that does not require the use of computers. Although that particular end result is unlikely, it is hoped that this research will lead to further insights into planar graph coloring.
 
 \vspace{.75in}
 \section*{Review of Literature}
 
-A review of relevant literature was obtained primarily through two sources: "Four Colors Suffice" by Robin Wilson and "Handbook of Combinatorics, Volume I" by Graham, Grotsche, and Lovasz. "Four Colors Suffice" presented a narrative overview of the history of the four color theorem and detailed the evolution of the existing proof. In particular, attempts at an inductive proof related to characterizing the graph in terms of some sort of distance labelling were looked for. The book stated that Tait attempted a proof by induction, but it did not involve distance labelling and was concerned with coloring the edges of a cycle that would go through every vertex in the graph once (102-105). Weirnecke attempted a proof along the same lines (147). No explicit mention of approaches that used distance labels was found. The section named "Coloring, Stable Sets and Perfect Graphs" of "Handbook of Combinatorics" was surveyed for any theorems related to distance labelling. Theorem 2.4 relates to the distance of circuits and a means of describing "unique" colorings that is relevant to the approach this paper will pursue, but does not appear to be directly relevant. A number of theorems can be found that state alternative wasy of stating the 4 color theorems that might be useful when combined with the method to be explored.
+Augustus De Morgan, credited for popularizing the problem originally posed by Francis Guthrie, believed that the necessity of a fourth color when a cycle of 3 vertices encloses a single vertex was significant to the problem \cite[p. 24]{4cs}. However, he was not able to turn this idea into a proof. Arthur Cayley revived the problem around 1878 \cite[p. 62]{4cs} and introduced the idea of restricting the problem to cubic maps (when countries are represented as regions) or making all regions but the outer region maximally planar (when countries are represented as vertices). He also made the observation that any planar map that can be colored with 4 colors must also be able to be colored such that the vertices on the outer cycle can be colored with 3 colors.
+
+Alfred Kempe made significant advances by introducing the idea of Kempe Chains, or cycles of vertices made up of alternating colors, and by using a derivation of Euler's formula for maps to prove that every planar map must have at least one vertex with degree 5 or less \cite[p. 79]{4cs}. His approach resulted in a proof which was eventually disproved by Heawood, but Heawood was able to use the same approach to prove that all planar graphs could be colored with 5 colors such that no 2 adjacent vertices shared the same color. \cite[p. 125]{4cs}
+
+Key elements of the approach by Kempe, namely looking for unavoidable sets and reducible configurations, eventually lead to the existing proof. \cite[p. 146]{4cs}. Birkhoff contributed by further characterizing the unavoidable sets in planar graphs, and by introducing the idea of a chromatic polynomial \cite[p. 166]{4cs}, which counts the number of valid colorings for a particular graph with given properties \cite{chromatic-polynomial}. Wernicke, Franklin and Lebesgue each contributed by attempting to characterize unavoidable sets of configurations \cite[p. 169]{4cs}, and Henrich Heesche was responsible for unifying the search for unavoidable sets of configurations and introducing the method of discharging \cite[p. 172]{4cs}. This method of discharging was eventually used to characterize as set of irreducible configurations by Appel and Haken, which then resulted in the currently accepted proof.
+
+Proofs via induction have not yet been successful. Tait introduced the idea of coloring boundary lines and using those properties to determine the coloring of interior regions, and Weirnecke attempted a proof along the same lines \cite[p. 147]{4cs}. No proof attempts which involve breaking the graph down into subgraphs based on distance labels seem to exist, although this idea does seem similar to De Morgan's original intuition about cycles of vertices which surround another vertex. There is a theorem presented by Müller in 1979 that relates to a method of coloring we will pursue \cite{short-cycles}, and our method is somewhat related to the colouring number presented by Erdős an Hanjal \cite{coloring-number}.
 
 \vspace{.75in}
 \section*{Research}
 
-This research will investigate the coloring properties of induced subgraphs of an arbitrary maximally connected planar graph with a fixed embedding in the plane, which we we call $G$. The set of induced sugraphs of interest is the series of induced subgraphs of $G$ where each element of the series, $G_d$, is the induced subgraph of $G$ consisting of vertices a minimum distance of $d$ away from some vertex in outermost cycle of $G$, where $d$ is equal to the $i$th element in the series. We will prove that each disjoint component of $G_{d+1}$ must sit inside the interior region of a chordless cycle of $G_d$. We will then attempt to come up with a constructive argument for counting the minimum number of possible $k$ colorings of each disjoint component $g \in G_d$, ie $P(g, k) | g \in G_d$ when each chordless cycle $s \in g$ is only allowed to have the minimum number of $k$ colorings permitted by being arbitrarily maximally planarly connected to $g_x \in G_{d+1}$ based on the minimum value for $P(g_x, k)$, where $g_k$ is the disjoint component of $G_{d+1}$ that sits inside the interior region of $s$.
+This research will investigate the coloring properties of induced subgraphs of an arbitrary maximally connected planar graph with a fixed embedding in the plane, which we we call $G$. The set of induced subgraphs of interest is the series of induced subgraphs of $G$ where each element of the series, $G_d$, is the induced subgraph of $G$ consisting of vertices a minimum distance of $d$ away from some vertex in outermost cycle of $G$.
 
-We will also brefielly discuss the idea of a relative coloring. A relative coloring is a coloring formed by sequentially coloring vertices on a path starting at a fixed point, where colors are the natural numbers and the fixed point is given the color 1, such that any uncolored vertex must either be colored with a color that's been used, ie $c \in C$, or $max(C) + 1$. This is similar to the coloring number used by Erdos.
+\ctikzfig{g_example}
+\caption{G}
 
-\begin{thm}
-Assume a maximally planar graph $G$ with a fixed embedding in the plane, let $\lambda: V(G) \mapsto \mathbb N$ be the minimum distance between $v \in V(G)$ and some point on the outer cycle of $G$, and let $G_d$ be the induced graph of $G_d$ such that  $\{ v \in V(G), \lambda(v) = d \} = V(G_d)$. Then the inner dual of $G_d$ will be a forest, $G_d$ will be within the interior region of a chordless cycle in $G_{d-1}$, and any two chordless cycles within $G_d$ share at most 1 edge and 2 vertices.
-\end{thm}
+\ctikzfig{g_1}
+\caption{G_0}
 
-\begin{defn}
-Let the relative coloring polynomial $P_{relative}(G, k)$ be number of relative colorings of $G$ starting at a fixed point using at most $k$ colors.
-\end{defn}
+\ctikzfig{g_2}
+\caption{G_1}
 
-\begin{thm}
-If $L_n$ is a path of length $n$, then
-\[
-  P_{relative}(L_n, 4) = \left\{\begin{array}{lr}
-  1 & n < 3\\
-  \displaystyle\sum_{i=0}^{n-3} 3^n + 1, & n \geq 3 \\
-  \end{array}\right
-\]
-\begin{equation}
-\end{equation}
-\end{thm}
+\ctikzfig{g_3}
+\caption{G_2}
 
-\begin{thm}
-If $S_n$ is a chordless cycle of length $n >= 3$, then
+We will attempt to prove that each disjoint component of $G_{d+1}$ must sit inside the interior region of a chordless cycle of $G_d$, and that the inner dual of each $G_d$ is a forest. We will then use this as a framework for investigating the coloring properties of planar graphs.
 
-\begin{equation}
-P_{relative}(S_n, 4) = \displaystyle\sum_{j=0}^{n-2} (\displaystyle\sum_{i=0}^{j+1} 3^{n-i-1}(-1)^{i}) + (1 - (-1)^{n-1})/2
-\end{equation}
-\end{thm}
+In addition, we will explore relative chromatic polynomials. A relative chromatic polynomial is a chromatic polynomial that counts the number of unique possible colorings given a fixed coloring of a starting point, where each node in the sequence of nodes being colored can only be colored with a color previously used or a single new color.
 
+\ctikzfig{relative_coloring}
+\caption{Example of all possible relative colorings of a path of length 4 (value of relative coloring polynomial of this path would be 5)}
+
+\bibliography{prospectus}
+\bibliographystyle{ieeetr}
 
 \end{document}

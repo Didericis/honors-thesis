@@ -42,6 +42,6 @@ Consider any arbitrary embedding of a graph in the plane that is maximally plana
 ### TODO:
 
 - [x] Add ability to specify nodes when creating new graphs
-- [ ] Add ability to print graph info to site
+- [x] Add ability to print graph info to site
 - [ ] Add ability to list and select level elements
 - [ ] Add ability to fold level elements and save intermediary svg steps

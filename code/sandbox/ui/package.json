@@ -6,6 +6,7 @@
     "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-json-view": "^1.19.1",
     "react-scripts": "3.0.1",
     "react-svg-pan-zoom": "^3.1.0",
     "react-svgmt": "^1.1.8"

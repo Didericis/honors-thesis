@@ -45,6 +45,12 @@ def planar_graph_svg(seed):
         )
     )
 
+@APP.route('/planar-graphs/<seed>/graph.json', methods=['GET'])
+def planar_graph_data(seed):
+    """ generates an svg for the given graph """
+    num_points = request.args.get('num-points', default=200, type=int)
+    triangle = MaximallyConnectedPlanarGraph(seed, num_points=num_points)
+    return triangle.to_json()
 
 if __name__ == "__main__":
     APP.run(host='0.0.0.0', debug=True)

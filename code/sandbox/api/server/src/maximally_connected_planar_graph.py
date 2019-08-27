@@ -119,15 +119,21 @@ class MaximallyConnectedPlanarGraph():
 
     def save_data_file(self):
         """
-        Serializes the data in this class into a json file
+        Saves the json data for this triangle in a file on disk
         """
         with open(self.files['data'], 'w') as outfile:
-            json.dump({
-                'boundary_nodes': self.boundary_nodes,
-                'nodes': self.nodes,
-                'levels': self.levels,
-            }, outfile, indent=4)
+            outfile.write(self.to_json())
             outfile.close()
+
+    def to_json(self):
+        """
+        Serializes the data for this triangle into a json file
+        """
+        return json.dumps({
+            'boundary_nodes': self.boundary_nodes,
+            'nodes': self.nodes,
+            'levels': self.levels,
+        }, indent=4)
 
     def calculate_clockwise_angle_and_distance(self, center_node, spoke_node): # pylint: disable=R0201
         """

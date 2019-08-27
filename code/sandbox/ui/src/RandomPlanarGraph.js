@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { UncontrolledReactSVGPanZoom } from 'react-svg-pan-zoom';
 import { SvgLoader } from 'react-svgmt'
 import $ from 'jquery';
+import ReactJson from 'react-json-view'
 
 import * as api from './api';
 
@@ -26,7 +27,8 @@ export default class RandomPlanarGraph extends Component {
     seed: null,
     numPointsInNewGraph: 200,
     sliceOrigin: null,
-    mode: this.MODES[0]
+    mode: this.MODES[0],
+    graphData: null,
   }
 
   componentDidMount() {
@@ -34,8 +36,11 @@ export default class RandomPlanarGraph extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.seed && (prevState.seed !== this.state.seed)) {
+    if (this.state.seed && (prevState.seed !== this.state.seed)) {
       this.getGraphs();
+      this.getGraphData(this.state.seed).then(graphData => {
+        this.setState({ graphData });
+      });
     }
   }
 
@@ -129,8 +134,12 @@ export default class RandomPlanarGraph extends Component {
     });
   }
 
+  getGraphData(seed) {
+    return fetch(api.url + `/planar-graphs/${seed}/graph.json`).then(data => data.json());
+  }
+
   render() {
-    const { mode, seed, numPointsInNewGraph, selectedColor } = this.state;
+    const { mode, seed, numPointsInNewGraph, selectedColor, graphData } = this.state;
     return (
       <div className='row'>
         <div className='column'>
@@ -175,6 +184,9 @@ export default class RandomPlanarGraph extends Component {
               </svg>
             </UncontrolledReactSVGPanZoom>
           </div>
+        </div>
+        <div className='column'>
+          <ReactJson src={graphData} collapsed={true} theme='monokai' style={{ maxHeight: '80vh', overflow: 'scroll', border: '1px solid white'}} />
         </div>
       </div>
     );

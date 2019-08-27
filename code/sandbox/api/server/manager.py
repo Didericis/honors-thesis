@@ -1,10 +1,11 @@
-# manage.py
+"""
+Manager
+"""
 
-from flask_script import Manager
+from flask_script import Manager # pylint: disable=E0401
+from application import APP
 
-from application import application
-
-manager = Manager(application)
+manager = Manager(APP)
 
 if __name__ == "__main__":
     manager.run()

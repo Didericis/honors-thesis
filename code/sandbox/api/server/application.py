@@ -3,8 +3,8 @@ API for returning an anlyzing planar graphs
 """
 
 import json
-from flask import Flask, Markup, request, jsonify
-from flask_cors import CORS
+from flask import Flask, Markup, request # pylint: disable=E0401
+from flask_cors import CORS # pylint: disable=E0401
 
 from src.maximally_connected_planar_graph import MaximallyConnectedPlanarGraph
 
@@ -21,23 +21,28 @@ def delete_all_planar_graphs():
     results = MaximallyConnectedPlanarGraph.list_all()
     return json.dumps(results)
 
-@APP.route('/planar-graphs/<seed>', methods=['GET', 'DELETE'])
+@APP.route('/planar-graphs/<seed>', methods=['DELETE'])
 def planar_graph(seed):
     """ delete planar graphs with specific seed """
-    if request.method == 'DELETE':
-        MaximallyConnectedPlanarGraph.delete(seed)
-        return ('', 204)
-    triangle = MaximallyConnectedPlanarGraph(seed)
-    slice_origin_id = request.args.get('slice-origin-id', default=None, type=str)
-    return Markup(triangle.generate_svg(slice_origin_id=slice_origin_id))
+    MaximallyConnectedPlanarGraph.delete(seed)
+    return ('', 204)
 
 
 @APP.route('/planar-graphs/<seed>/graph.svg', methods=['GET'])
 def planar_graph_svg(seed):
     """ generates an svg for the given graph """
     triangle = MaximallyConnectedPlanarGraph(seed)
-    slice_origin_id = request.args.get('slice-origin-id', default=None, type=str)
-    return Markup(triangle.generate_svg(slice_origin_id=slice_origin_id))
+    slice_origin_id = request.args.get('slice-origin-id', default=None, type=int)
+    reverse_slice = request.args.get('reverse-slice', default=False, type=bool)
+    colored_nodes = dict(request.args)
+    colored_nodes.pop('slice_origin_id', None)
+    return Markup(
+        triangle.generate_svg(
+            slice_origin_id=slice_origin_id,
+            colored_nodes=colored_nodes,
+            reverse_slice=reverse_slice
+        )
+    )
 
 
 if __name__ == "__main__":

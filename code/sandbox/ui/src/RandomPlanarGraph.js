@@ -8,19 +8,23 @@ import * as api from './api';
 export default class RandomPlanarGraph extends Component {
   Viewer = null
 
+  MODES = ['color', 'strip', 'reverseStrip']
+
   constructor(props) {
     super(props)
     this.getUrl = this.getUrl.bind(this);
-    this.regenerate = this.regenerate.bind(this);
+    this.createNewGraph = this.createNewGraph.bind(this);
     this.registerClickHandlers = this.registerClickHandlers.bind(this);
-    this.startRotation = this.startRotation.bind(this);
+    this.toggleMode = this.toggleMode.bind(this);
   }
 
   state = {
+    selectedColor: 'red',
+    coloredNodes: {},
     graphs: [],
     seed: null,
     sliceOrigin: null,
-    mode: 'rotationA'
+    mode: this.MODES[0]
   }
 
   componentDidMount() {
@@ -33,7 +37,7 @@ export default class RandomPlanarGraph extends Component {
     }
   }
 
-  regenerate() {
+  createNewGraph() {
     this.setState({ seed: this.generateSeed() });
   }
 
@@ -42,13 +46,15 @@ export default class RandomPlanarGraph extends Component {
   }
 
   getUrl() {
-    const { seed, sliceOrigin, rotationA, rotationB } = this.state;
+    const { seed, sliceOrigin, colors, mode } = this.state;
     let url = api.url + `/planar-graphs/${seed}/graph.svg`;
     const query = [];
     if (sliceOrigin) query.push(`slice-origin-id=${sliceOrigin}`);
-    if (rotationA && rotationB) {
-      query.push(`rotationA=${rotationA}`);
-      query.push(`rotationB=${rotationB}`);
+    if (mode === 'reverseStrip') query.push('reverse-slice=True');
+    if (colors) {
+      Object.keys(colors).forEach((id) => {
+        query.push(`${id}=${colors[id]}`);
+      });
     }
     if (query.length) url += '?' + query.join('&')
     return url;
@@ -68,24 +74,15 @@ export default class RandomPlanarGraph extends Component {
   }
 
   onClickNode(e) {
-    const { mode } = this.state;
+    const { mode, selectedColor } = this.state;
     const id = $(e.target).attr('id');
-    if (mode === 'strip') {
+    if (['strip', 'reverseStrip'].includes(mode)) {
       const sliceOrigin = id;
       this.setState({ sliceOrigin });
-    } else if (mode === 'rotationA') {
-      this.setState({
-        rotationA: id,
-        rotationB: null,
-      });
-      setTimeout(() => {
-        this.setState({ mode: 'rotationB' });
-      }, 1000);
-    } else {
-      this.setState({ rotationB: id });
-      setTimeout(() => {
-        this.setState({ mode: 'rotationA' });
-      }, 1000);
+    } else if (mode === 'color') {
+      this.setState(({ colors }) => ({
+        colors: { ...colors, [id]: selectedColor }
+      }));
     }
   }
 
@@ -109,16 +106,24 @@ export default class RandomPlanarGraph extends Component {
     });
   }
 
-  startRotation() {
+  clearColors() {
+    this.setState({ colors: {} });
+  }
+
+  selectColor(selectedColor) {
+    this.setState({ selectedColor });
+  }
+
+  toggleMode() {
+    const { MODES } = this;
+    const { mode } = this.state;
     this.setState({
-      mode: 'rotationA',
-      rotationA: null,
-      rotationB: null,
+      mode: MODES[(MODES.indexOf(mode) + 1) % MODES.length]
     });
   }
 
   render() {
-    const { seed, mode } = this.state;
+    const { mode, seed, selectedColor } = this.state;
     return (
       <div className='row'>
         <div className='column'>
@@ -137,9 +142,14 @@ export default class RandomPlanarGraph extends Component {
         </div>
         <div className='column'>
           <div className='row'>
-            <button onClick={this.regenerate}>Regenerate</button>
-            <button onClick={this.startRotation}>Start Rotation</button>
-            <span>{mode}</span>
+            <button onClick={this.createNewGraph}>Regenerate</button>
+            <button style={{ backgroundColor: 'blue' }} onClick={this.selectColor.bind(this, 'blue')}>Blue</button>
+            <button style={{ backgroundColor: 'red' }} onClick={this.selectColor.bind(this, 'red')}>Red</button>
+            <button style={{ backgroundColor: 'yellow' }} onClick={this.selectColor.bind(this, 'yellow')}>Yellow</button>
+            <button style={{ backgroundColor: 'green' }} onClick={this.selectColor.bind(this, 'green')}>Green</button>
+            <button style={{ backgroundColor: 'white' }} onClick={this.selectColor.bind(this, 'white')}>White</button>
+            <span style={{ color: selectedColor }}>Selected: { selectedColor }</span>
+            <button onClick={this.toggleMode}>Mode: {mode}</button>
           </div>
           <div className='row'>
             <UncontrolledReactSVGPanZoom

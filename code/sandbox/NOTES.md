@@ -32,3 +32,8 @@ Consider any arbitrary embedding of a graph in the plane that is maximally plana
 
 - CLAIM: two level slices can have at most 2 vertices in common that are on the same level
   - if 2 vertices in common on the same level, those common vertices must be on the uppermost level of one slice and the lowermost level of the other slice
+
+- [OBSERVATION 1](observation_1.png):
+  - Cannot always alternate two colors around a level cycle with only 1 exception
+- [OBSERVATION 2](observation_2.png):
+  - Going counter clockwise with first sequence and only moving up a level on the last edge on a node with multiple edges between levels does results in conflicts when going up via same pattern with second sequence

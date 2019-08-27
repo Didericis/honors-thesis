@@ -1,0 +1,6085 @@
+{
+    "boundary_nodes": [
+        1,
+        2,
+        3
+    ],
+    "nodes": {
+        "1": {
+            "id": 1,
+            "coords": [
+                0,
+                750
+            ],
+            "distance": 0,
+            "relations": [
+                3,
+                155,
+                161,
+                168,
+                76,
+                179,
+                139,
+                16,
+                12,
+                2
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                0
+            ]
+        },
+        "2": {
+            "id": 2,
+            "coords": [
+                750,
+                0
+            ],
+            "distance": 0,
+            "relations": [
+                45,
+                129,
+                144,
+                64,
+                3,
+                1,
+                12,
+                133,
+                40,
+                176
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "3": {
+            "id": 3,
+            "coords": [
+                1500,
+                751
+            ],
+            "distance": 0,
+            "relations": [
+                2,
+                64,
+                147,
+                182,
+                106,
+                26,
+                190,
+                130,
+                68,
+                155,
+                1
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                0
+            ]
+        },
+        "4": {
+            "id": 4,
+            "coords": [
+                737,
+                488
+            ],
+            "distance": 6,
+            "relations": [
+                159,
+                178,
+                114,
+                137,
+                101,
+                181,
+                22
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "5": {
+            "id": 5,
+            "coords": [
+                697,
+                671
+            ],
+            "distance": 2,
+            "relations": [
+                155,
+                80,
+                194,
+                151,
+                69,
+                161
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2
+            ]
+        },
+        "6": {
+            "id": 6,
+            "coords": [
+                834,
+                232
+            ],
+            "distance": 3,
+            "relations": [
+                134,
+                167,
+                74,
+                57,
+                188
+            ],
+            "level_cycles": [
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "7": {
+            "id": 7,
+            "coords": [
+                427,
+                524
+            ],
+            "distance": 2,
+            "relations": [
+                87,
+                200,
+                139,
+                125,
+                177
+            ],
+            "level_cycles": [
+                0,
+                1,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "8": {
+            "id": 8,
+            "coords": [
+                615,
+                560
+            ],
+            "distance": 4,
+            "relations": [
+                119,
+                36,
+                123,
+                199,
+                42,
+                164,
+                43
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "9": {
+            "id": 9,
+            "coords": [
+                695,
+                232
+            ],
+            "distance": 2,
+            "relations": [
+                150,
+                107,
+                176,
+                40,
+                166,
+                145,
+                183
+            ],
+            "level_cycles": [
+                0,
+                1,
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                2
+            ]
+        },
+        "10": {
+            "id": 10,
+            "coords": [
+                532,
+                649
+            ],
+            "distance": 3,
+            "relations": [
+                83,
+                39,
+                180,
+                198
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "11": {
+            "id": 11,
+            "coords": [
+                902,
+                561
+            ],
+            "distance": 4,
+            "relations": [
+                13,
+                75,
+                142,
+                15
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "12": {
+            "id": 12,
+            "coords": [
+                602,
+                236
+            ],
+            "distance": 1,
+            "relations": [
+                169,
+                133,
+                2,
+                1,
+                16,
+                112,
+                156
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ]
+        },
+        "13": {
+            "id": 13,
+            "coords": [
+                930,
+                593
+            ],
+            "distance": 3,
+            "relations": [
+                138,
+                131,
+                116,
+                126,
+                175,
+                75,
+                11,
+                15,
+                117
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "14": {
+            "id": 14,
+            "coords": [
+                514,
+                580
+            ],
+            "distance": 4,
+            "relations": [
+                39,
+                90,
+                86,
+                84
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "15": {
+            "id": 15,
+            "coords": [
+                885,
+                593
+            ],
+            "distance": 4,
+            "relations": [
+                13,
+                11,
+                142,
+                172,
+                109,
+                117
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "16": {
+            "id": 16,
+            "coords": [
+                522,
+                339
+            ],
+            "distance": 1,
+            "relations": [
+                23,
+                97,
+                112,
+                12,
+                1,
+                139,
+                197
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "17": {
+            "id": 17,
+            "coords": [
+                367,
+                617
+            ],
+            "distance": 2,
+            "relations": [
+                192,
+                71,
+                52,
+                115,
+                168
+            ],
+            "level_cycles": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "18": {
+            "id": 18,
+            "coords": [
+                961,
+                457
+            ],
+            "distance": 2,
+            "relations": [
+                173,
+                147,
+                104,
+                124,
+                35,
+                175
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "19": {
+            "id": 19,
+            "coords": [
+                829,
+                542
+            ],
+            "distance": 4,
+            "relations": [
+                109,
+                172,
+                31,
+                51,
+                178,
+                24,
+                141
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4
+            ]
+        },
+        "20": {
+            "id": 20,
+            "coords": [
+                619,
+                368
+            ],
+            "distance": 3,
+            "relations": [
+                56,
+                135,
+                174,
+                91,
+                97,
+                23,
+                28,
+                153
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                3
+            ]
+        },
+        "21": {
+            "id": 21,
+            "coords": [
+                710,
+                271
+            ],
+            "distance": 4,
+            "relations": [
+                132,
+                148,
+                128,
+                150,
+                183
+            ],
+            "level_cycles": [
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "22": {
+            "id": 22,
+            "coords": [
+                726,
+                524
+            ],
+            "distance": 5,
+            "relations": [
+                67,
+                24,
+                159,
+                4,
+                181,
+                123,
+                62
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "23": {
+            "id": 23,
+            "coords": [
+                552,
+                375
+            ],
+            "distance": 2,
+            "relations": [
+                160,
+                28,
+                20,
+                97,
+                16,
+                197,
+                103,
+                32
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "24": {
+            "id": 24,
+            "coords": [
+                758,
+                519
+            ],
+            "distance": 4,
+            "relations": [
+                141,
+                19,
+                178,
+                159,
+                22,
+                67
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4
+            ]
+        },
+        "25": {
+            "id": 25,
+            "coords": [
+                856,
+                454
+            ],
+            "distance": 5,
+            "relations": [
+                113,
+                121,
+                60,
+                99,
+                178,
+                51
+            ],
+            "level_cycles": [
+                0,
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "26": {
+            "id": 26,
+            "coords": [
+                1096,
+                576
+            ],
+            "distance": 1,
+            "relations": [
+                190,
+                3,
+                106,
+                49,
+                171,
+                27,
+                94
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "27": {
+            "id": 27,
+            "coords": [
+                1042,
+                645
+            ],
+            "distance": 2,
+            "relations": [
+                92,
+                94,
+                26,
+                171,
+                116,
+                131,
+                185,
+                187
+            ],
+            "level_cycles": [
+                0,
+                1,
+                8,
+                9,
+                10,
+                11
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "28": {
+            "id": 28,
+            "coords": [
+                585,
+                395
+            ],
+            "distance": 3,
+            "relations": [
+                34,
+                153,
+                20,
+                23,
+                160
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "29": {
+            "id": 29,
+            "coords": [
+                873,
+                678
+            ],
+            "distance": 2,
+            "relations": [
+                68,
+                189,
+                63,
+                109,
+                196,
+                155
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                2,
+                2
+            ]
+        },
+        "30": {
+            "id": 30,
+            "coords": [
+                442,
+                665
+            ],
+            "distance": 2,
+            "relations": [
+                198,
+                48,
+                154,
+                192,
+                168
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "31": {
+            "id": 31,
+            "coords": [
+                860,
+                532
+            ],
+            "distance": 5,
+            "relations": [
+                172,
+                113,
+                51,
+                19
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                1
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "32": {
+            "id": 32,
+            "coords": [
+                549,
+                414
+            ],
+            "distance": 3,
+            "relations": [
+                152,
+                160,
+                23,
+                103,
+                193
+            ],
+            "level_cycles": [
+                0,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "33": {
+            "id": 33,
+            "coords": [
+                857,
+                302
+            ],
+            "distance": 3,
+            "relations": [
+                54,
+                170,
+                72,
+                195,
+                191,
+                100,
+                146
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "34": {
+            "id": 34,
+            "coords": [
+                620,
+                404
+            ],
+            "distance": 4,
+            "relations": [
+                181,
+                37,
+                56,
+                153,
+                28,
+                160,
+                152,
+                199
+            ],
+            "level_cycles": [
+                1,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4
+            ]
+        },
+        "35": {
+            "id": 35,
+            "coords": [
+                940,
+                458
+            ],
+            "distance": 3,
+            "relations": [
+                175,
+                18,
+                124,
+                121,
+                113,
+                93
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "36": {
+            "id": 36,
+            "coords": [
+                676,
+                585
+            ],
+            "distance": 5,
+            "relations": [
+                110,
+                62,
+                123,
+                8,
+                119
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                2
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "37": {
+            "id": 37,
+            "coords": [
+                674,
+                400
+            ],
+            "distance": 5,
+            "relations": [
+                101,
+                59,
+                96,
+                162,
+                56,
+                34,
+                181
+            ],
+            "level_cycles": [
+                2,
+                8
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "38": {
+            "id": 38,
+            "coords": [
+                872,
+                370
+            ],
+            "distance": 4,
+            "relations": [
+                121,
+                124,
+                47,
+                105,
+                54,
+                146,
+                82
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "39": {
+            "id": 39,
+            "coords": [
+                515,
+                596
+            ],
+            "distance": 3,
+            "relations": [
+                10,
+                83,
+                43,
+                90,
+                14,
+                84,
+                180
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3
+            ]
+        },
+        "40": {
+            "id": 40,
+            "coords": [
+                685,
+                205
+            ],
+            "distance": 1,
+            "relations": [
+                9,
+                176,
+                2,
+                133,
+                166
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "41": {
+            "id": 41,
+            "coords": [
+                751,
+                360
+            ],
+            "distance": 5,
+            "relations": [
+                85,
+                61,
+                136,
+                186,
+                70,
+                158,
+                59,
+                89
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "42": {
+            "id": 42,
+            "coords": [
+                604,
+                525
+            ],
+            "distance": 5,
+            "relations": [
+                8,
+                199,
+                157,
+                77,
+                164
+            ],
+            "level_cycles": [
+                1,
+                5,
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4
+            ]
+        },
+        "43": {
+            "id": 43,
+            "coords": [
+                577,
+                598
+            ],
+            "distance": 3,
+            "relations": [
+                95,
+                119,
+                8,
+                164,
+                90,
+                39,
+                83
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3
+            ]
+        },
+        "44": {
+            "id": 44,
+            "coords": [
+                510,
+                465
+            ],
+            "distance": 3,
+            "relations": [
+                86,
+                79,
+                140,
+                193,
+                149,
+                200,
+                87
+            ],
+            "level_cycles": [
+                0,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "45": {
+            "id": 45,
+            "coords": [
+                782,
+                205
+            ],
+            "distance": 1,
+            "relations": [
+                102,
+                120,
+                74,
+                129,
+                2,
+                176,
+                58
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "46": {
+            "id": 46,
+            "coords": [
+                464,
+                570
+            ],
+            "distance": 3,
+            "relations": [
+                180,
+                84,
+                87,
+                177,
+                71,
+                154
+            ],
+            "level_cycles": [
+                0,
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "47": {
+            "id": 47,
+            "coords": [
+                960,
+                384
+            ],
+            "distance": 3,
+            "relations": [
+                104,
+                98,
+                122,
+                105,
+                38,
+                124
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "48": {
+            "id": 48,
+            "coords": [
+                471,
+                646
+            ],
+            "distance": 3,
+            "relations": [
+                198,
+                180,
+                154,
+                30
+            ],
+            "level_cycles": [
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "49": {
+            "id": 49,
+            "coords": [
+                1068,
+                543
+            ],
+            "distance": 2,
+            "relations": [
+                26,
+                106,
+                182,
+                81,
+                171
+            ],
+            "level_cycles": [
+                1,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "50": {
+            "id": 50,
+            "coords": [
+                539,
+                494
+            ],
+            "distance": 5,
+            "relations": [
+                157,
+                140,
+                79,
+                77
+            ],
+            "level_cycles": [
+                1,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "51": {
+            "id": 51,
+            "coords": [
+                846,
+                483
+            ],
+            "distance": 5,
+            "relations": [
+                31,
+                113,
+                25,
+                178,
+                19
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [
+                1
+            ],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "52": {
+            "id": 52,
+            "coords": [
+                365,
+                592
+            ],
+            "distance": 2,
+            "relations": [
+                17,
+                71,
+                179,
+                76,
+                115
+            ],
+            "level_cycles": [
+                1,
+                3,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                1
+            ]
+        },
+        "53": {
+            "id": 53,
+            "coords": [
+                790,
+                295
+            ],
+            "distance": 3,
+            "relations": [
+                111,
+                143,
+                120,
+                102,
+                88,
+                136,
+                61
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "54": {
+            "id": 54,
+            "coords": [
+                874,
+                344
+            ],
+            "distance": 3,
+            "relations": [
+                105,
+                170,
+                33,
+                146,
+                38
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3
+            ]
+        },
+        "55": {
+            "id": 55,
+            "coords": [
+                722,
+                314
+            ],
+            "distance": 5,
+            "relations": [
+                70,
+                186,
+                132,
+                184
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "56": {
+            "id": 56,
+            "coords": [
+                654,
+                380
+            ],
+            "distance": 4,
+            "relations": [
+                37,
+                162,
+                135,
+                20,
+                153,
+                34
+            ],
+            "level_cycles": [
+                1,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "57": {
+            "id": 57,
+            "coords": [
+                827,
+                233
+            ],
+            "distance": 3,
+            "relations": [
+                6,
+                74,
+                188
+            ],
+            "level_cycles": [
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "58": {
+            "id": 58,
+            "coords": [
+                748,
+                225
+            ],
+            "distance": 2,
+            "relations": [
+                88,
+                102,
+                45,
+                176,
+                107,
+                128
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                2
+            ]
+        },
+        "59": {
+            "id": 59,
+            "coords": [
+                725,
+                378
+            ],
+            "distance": 6,
+            "relations": [
+                137,
+                89,
+                41,
+                158,
+                96,
+                37,
+                101
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "60": {
+            "id": 60,
+            "coords": [
+                825,
+                410
+            ],
+            "distance": 5,
+            "relations": [
+                25,
+                121,
+                82,
+                65,
+                99
+            ],
+            "level_cycles": [
+                2,
+                9
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "61": {
+            "id": 61,
+            "coords": [
+                774,
+                361
+            ],
+            "distance": 4,
+            "relations": [
+                65,
+                146,
+                111,
+                53,
+                136,
+                41,
+                85
+            ],
+            "level_cycles": [
+                1,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "62": {
+            "id": 62,
+            "coords": [
+                689,
+                587
+            ],
+            "distance": 4,
+            "relations": [
+                110,
+                163,
+                67,
+                22,
+                123,
+                36
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4
+            ]
+        },
+        "63": {
+            "id": 63,
+            "coords": [
+                876,
+                637
+            ],
+            "distance": 3,
+            "relations": [
+                189,
+                138,
+                117,
+                109,
+                29
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "64": {
+            "id": 64,
+            "coords": [
+                923,
+                260
+            ],
+            "distance": 1,
+            "relations": [
+                122,
+                98,
+                147,
+                3,
+                2,
+                144,
+                72,
+                170,
+                118
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+            ]
+        },
+        "65": {
+            "id": 65,
+            "coords": [
+                813,
+                399
+            ],
+            "distance": 5,
+            "relations": [
+                99,
+                60,
+                82,
+                146,
+                61,
+                85,
+                165,
+                127
+            ],
+            "level_cycles": [
+                2,
+                9
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                5,
+                5
+            ]
+        },
+        "66": {
+            "id": 66,
+            "coords": [
+                890,
+                533
+            ],
+            "distance": 5,
+            "relations": [
+                142,
+                75,
+                93,
+                113,
+                172
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "67": {
+            "id": 67,
+            "coords": [
+                736,
+                577
+            ],
+            "distance": 4,
+            "relations": [
+                141,
+                24,
+                22,
+                62,
+                163
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "68": {
+            "id": 68,
+            "coords": [
+                931,
+                692
+            ],
+            "distance": 1,
+            "relations": [
+                3,
+                130,
+                187,
+                185,
+                131,
+                189,
+                29,
+                155
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "69": {
+            "id": 69,
+            "coords": [
+                605,
+                680
+            ],
+            "distance": 2,
+            "relations": [
+                161,
+                5,
+                151,
+                95,
+                83
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "70": {
+            "id": 70,
+            "coords": [
+                734,
+                313
+            ],
+            "distance": 6,
+            "relations": [
+                41,
+                186,
+                55,
+                184,
+                158
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "71": {
+            "id": 71,
+            "coords": [
+                395,
+                598
+            ],
+            "distance": 2,
+            "relations": [
+                192,
+                154,
+                46,
+                177,
+                179,
+                52,
+                17
+            ],
+            "level_cycles": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "72": {
+            "id": 72,
+            "coords": [
+                895,
+                274
+            ],
+            "distance": 2,
+            "relations": [
+                170,
+                64,
+                144,
+                195,
+                33
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "73": {
+            "id": 73,
+            "coords": [
+                693,
+                329
+            ],
+            "distance": 4,
+            "relations": [
+                184,
+                132,
+                183,
+                78,
+                135,
+                162,
+                96
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4
+            ]
+        },
+        "74": {
+            "id": 74,
+            "coords": [
+                826,
+                227
+            ],
+            "distance": 2,
+            "relations": [
+                57,
+                6,
+                167,
+                129,
+                45,
+                120,
+                188
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                2
+            ]
+        },
+        "75": {
+            "id": 75,
+            "coords": [
+                927,
+                521
+            ],
+            "distance": 4,
+            "relations": [
+                13,
+                175,
+                93,
+                66,
+                142,
+                11
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4
+            ]
+        },
+        "76": {
+            "id": 76,
+            "coords": [
+                285,
+                684
+            ],
+            "distance": 1,
+            "relations": [
+                168,
+                115,
+                52,
+                179,
+                1
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "77": {
+            "id": 77,
+            "coords": [
+                538,
+                506
+            ],
+            "distance": 5,
+            "relations": [
+                90,
+                164,
+                42,
+                157,
+                50,
+                79,
+                86
+            ],
+            "level_cycles": [
+                1,
+                6,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "78": {
+            "id": 78,
+            "coords": [
+                657,
+                291
+            ],
+            "distance": 3,
+            "relations": [
+                73,
+                183,
+                169,
+                91,
+                174,
+                135
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3
+            ]
+        },
+        "79": {
+            "id": 79,
+            "coords": [
+                531,
+                497
+            ],
+            "distance": 4,
+            "relations": [
+                77,
+                50,
+                140,
+                44,
+                86
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4
+            ]
+        },
+        "80": {
+            "id": 80,
+            "coords": [
+                744,
+                648
+            ],
+            "distance": 2,
+            "relations": [
+                196,
+                141,
+                163,
+                194,
+                5,
+                155
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "81": {
+            "id": 81,
+            "coords": [
+                1028,
+                562
+            ],
+            "distance": 2,
+            "relations": [
+                171,
+                49,
+                182,
+                126,
+                116
+            ],
+            "level_cycles": [
+                0,
+                1,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "82": {
+            "id": 82,
+            "coords": [
+                830,
+                389
+            ],
+            "distance": 5,
+            "relations": [
+                121,
+                38,
+                146,
+                65,
+                60
+            ],
+            "level_cycles": [
+                9
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "83": {
+            "id": 83,
+            "coords": [
+                542,
+                647
+            ],
+            "distance": 2,
+            "relations": [
+                161,
+                69,
+                95,
+                43,
+                39,
+                10,
+                198
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "84": {
+            "id": 84,
+            "coords": [
+                486,
+                577
+            ],
+            "distance": 4,
+            "relations": [
+                39,
+                14,
+                86,
+                87,
+                46,
+                180
+            ],
+            "level_cycles": [
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "85": {
+            "id": 85,
+            "coords": [
+                772,
+                374
+            ],
+            "distance": 5,
+            "relations": [
+                165,
+                65,
+                61,
+                41,
+                89
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                5
+            ]
+        },
+        "86": {
+            "id": 86,
+            "coords": [
+                526,
+                508
+            ],
+            "distance": 4,
+            "relations": [
+                90,
+                77,
+                79,
+                44,
+                87,
+                84,
+                14
+            ],
+            "level_cycles": [
+                1,
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "87": {
+            "id": 87,
+            "coords": [
+                460,
+                523
+            ],
+            "distance": 3,
+            "relations": [
+                46,
+                84,
+                86,
+                44,
+                200,
+                7,
+                177
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "88": {
+            "id": 88,
+            "coords": [
+                754,
+                263
+            ],
+            "distance": 3,
+            "relations": [
+                53,
+                102,
+                58,
+                128,
+                148,
+                136
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "89": {
+            "id": 89,
+            "coords": [
+                749,
+                371
+            ],
+            "distance": 6,
+            "relations": [
+                137,
+                165,
+                85,
+                41,
+                59
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "90": {
+            "id": 90,
+            "coords": [
+                541,
+                576
+            ],
+            "distance": 4,
+            "relations": [
+                43,
+                164,
+                77,
+                86,
+                14,
+                39
+            ],
+            "level_cycles": [
+                1,
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "91": {
+            "id": 91,
+            "coords": [
+                609,
+                326
+            ],
+            "distance": 3,
+            "relations": [
+                20,
+                174,
+                78,
+                169,
+                156,
+                112,
+                97
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "92": {
+            "id": 92,
+            "coords": [
+                1080,
+                675
+            ],
+            "distance": 2,
+            "relations": [
+                130,
+                94,
+                27,
+                187
+            ],
+            "level_cycles": [
+                1,
+                8,
+                9
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "93": {
+            "id": 93,
+            "coords": [
+                909,
+                503
+            ],
+            "distance": 4,
+            "relations": [
+                75,
+                175,
+                35,
+                113,
+                66
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "94": {
+            "id": 94,
+            "coords": [
+                1093,
+                666
+            ],
+            "distance": 2,
+            "relations": [
+                130,
+                190,
+                26,
+                27,
+                92
+            ],
+            "level_cycles": [
+                1,
+                8
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "95": {
+            "id": 95,
+            "coords": [
+                601,
+                662
+            ],
+            "distance": 3,
+            "relations": [
+                69,
+                151,
+                119,
+                43,
+                83
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "96": {
+            "id": 96,
+            "coords": [
+                691,
+                356
+            ],
+            "distance": 5,
+            "relations": [
+                59,
+                158,
+                184,
+                73,
+                162,
+                37
+            ],
+            "level_cycles": [
+                2,
+                8
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "97": {
+            "id": 97,
+            "coords": [
+                560,
+                332
+            ],
+            "distance": 2,
+            "relations": [
+                20,
+                91,
+                112,
+                16,
+                23
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "98": {
+            "id": 98,
+            "coords": [
+                965,
+                385
+            ],
+            "distance": 2,
+            "relations": [
+                147,
+                64,
+                122,
+                47,
+                104
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "99": {
+            "id": 99,
+            "coords": [
+                815,
+                418
+            ],
+            "distance": 6,
+            "relations": [
+                25,
+                60,
+                65,
+                127,
+                114,
+                178
+            ],
+            "level_cycles": [
+                0,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "100": {
+            "id": 100,
+            "coords": [
+                819,
+                305
+            ],
+            "distance": 4,
+            "relations": [
+                146,
+                33,
+                191,
+                143,
+                111
+            ],
+            "level_cycles": [
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "101": {
+            "id": 101,
+            "coords": [
+                684,
+                410
+            ],
+            "distance": 6,
+            "relations": [
+                4,
+                137,
+                59,
+                37,
+                181
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "102": {
+            "id": 102,
+            "coords": [
+                786,
+                241
+            ],
+            "distance": 2,
+            "relations": [
+                53,
+                120,
+                45,
+                58,
+                88
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "103": {
+            "id": 103,
+            "coords": [
+                527,
+                402
+            ],
+            "distance": 3,
+            "relations": [
+                32,
+                23,
+                197,
+                108,
+                193
+            ],
+            "level_cycles": [
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "104": {
+            "id": 104,
+            "coords": [
+                964,
+                417
+            ],
+            "distance": 2,
+            "relations": [
+                147,
+                98,
+                47,
+                124,
+                18
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "105": {
+            "id": 105,
+            "coords": [
+                905,
+                346
+            ],
+            "distance": 3,
+            "relations": [
+                47,
+                122,
+                118,
+                170,
+                54,
+                38
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "106": {
+            "id": 106,
+            "coords": [
+                1081,
+                530
+            ],
+            "distance": 1,
+            "relations": [
+                26,
+                3,
+                182,
+                49
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "107": {
+            "id": 107,
+            "coords": [
+                716,
+                231
+            ],
+            "distance": 2,
+            "relations": [
+                128,
+                58,
+                176,
+                9,
+                150
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "108": {
+            "id": 108,
+            "coords": [
+                476,
+                413
+            ],
+            "distance": 2,
+            "relations": [
+                149,
+                193,
+                103,
+                197,
+                139,
+                200
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "109": {
+            "id": 109,
+            "coords": [
+                837,
+                600
+            ],
+            "distance": 3,
+            "relations": [
+                29,
+                63,
+                117,
+                15,
+                172,
+                19,
+                141,
+                196
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "110": {
+            "id": 110,
+            "coords": [
+                694,
+                607
+            ],
+            "distance": 4,
+            "relations": [
+                194,
+                163,
+                62,
+                36,
+                119,
+                151
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "111": {
+            "id": 111,
+            "coords": [
+                802,
+                304
+            ],
+            "distance": 4,
+            "relations": [
+                146,
+                100,
+                143,
+                53,
+                61
+            ],
+            "level_cycles": [
+                6,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "112": {
+            "id": 112,
+            "coords": [
+                566,
+                311
+            ],
+            "distance": 2,
+            "relations": [
+                91,
+                156,
+                12,
+                16,
+                97
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1
+            ]
+        },
+        "113": {
+            "id": 113,
+            "coords": [
+                887,
+                490
+            ],
+            "distance": 4,
+            "relations": [
+                66,
+                93,
+                35,
+                121,
+                25,
+                51,
+                31,
+                172
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "114": {
+            "id": 114,
+            "coords": [
+                776,
+                434
+            ],
+            "distance": 6,
+            "relations": [
+                178,
+                99,
+                127,
+                165,
+                137,
+                4
+            ],
+            "level_cycles": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "115": {
+            "id": 115,
+            "coords": [
+                334,
+                665
+            ],
+            "distance": 2,
+            "relations": [
+                168,
+                17,
+                52,
+                76
+            ],
+            "level_cycles": [
+                1,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "116": {
+            "id": 116,
+            "coords": [
+                1013,
+                580
+            ],
+            "distance": 3,
+            "relations": [
+                27,
+                171,
+                81,
+                126,
+                13,
+                131
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "117": {
+            "id": 117,
+            "coords": [
+                877,
+                615
+            ],
+            "distance": 4,
+            "relations": [
+                138,
+                13,
+                15,
+                109,
+                63
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "118": {
+            "id": 118,
+            "coords": [
+                919,
+                325
+            ],
+            "distance": 2,
+            "relations": [
+                122,
+                64,
+                170,
+                105
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "119": {
+            "id": 119,
+            "coords": [
+                627,
+                617
+            ],
+            "distance": 4,
+            "relations": [
+                151,
+                110,
+                36,
+                8,
+                43,
+                95
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "120": {
+            "id": 120,
+            "coords": [
+                794,
+                243
+            ],
+            "distance": 2,
+            "relations": [
+                143,
+                188,
+                74,
+                45,
+                102,
+                53
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "121": {
+            "id": 121,
+            "coords": [
+                884,
+                440
+            ],
+            "distance": 4,
+            "relations": [
+                113,
+                35,
+                124,
+                38,
+                82,
+                60,
+                25
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4
+            ]
+        },
+        "122": {
+            "id": 122,
+            "coords": [
+                929,
+                339
+            ],
+            "distance": 2,
+            "relations": [
+                47,
+                98,
+                64,
+                118,
+                105
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "123": {
+            "id": 123,
+            "coords": [
+                678,
+                580
+            ],
+            "distance": 5,
+            "relations": [
+                62,
+                22,
+                181,
+                199,
+                8,
+                36
+            ],
+            "level_cycles": [
+                3,
+                4
+            ],
+            "level_paths": [
+                2
+            ],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "124": {
+            "id": 124,
+            "coords": [
+                932,
+                436
+            ],
+            "distance": 3,
+            "relations": [
+                35,
+                18,
+                104,
+                47,
+                38,
+                121
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "125": {
+            "id": 125,
+            "coords": [
+                400,
+                504
+            ],
+            "distance": 2,
+            "relations": [
+                177,
+                7,
+                139,
+                179
+            ],
+            "level_cycles": [
+                1,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "126": {
+            "id": 126,
+            "coords": [
+                982,
+                525
+            ],
+            "distance": 2,
+            "relations": [
+                116,
+                81,
+                182,
+                173,
+                175,
+                13
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "127": {
+            "id": 127,
+            "coords": [
+                801,
+                411
+            ],
+            "distance": 6,
+            "relations": [
+                99,
+                65,
+                165,
+                114
+            ],
+            "level_cycles": [
+                0,
+                1,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "128": {
+            "id": 128,
+            "coords": [
+                729,
+                247
+            ],
+            "distance": 3,
+            "relations": [
+                88,
+                58,
+                107,
+                150,
+                21,
+                148
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "129": {
+            "id": 129,
+            "coords": [
+                845,
+                204
+            ],
+            "distance": 1,
+            "relations": [
+                167,
+                144,
+                2,
+                45,
+                74
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "130": {
+            "id": 130,
+            "coords": [
+                1153,
+                699
+            ],
+            "distance": 1,
+            "relations": [
+                3,
+                190,
+                94,
+                92,
+                187,
+                68
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "131": {
+            "id": 131,
+            "coords": [
+                966,
+                655
+            ],
+            "distance": 2,
+            "relations": [
+                185,
+                27,
+                116,
+                13,
+                138,
+                189,
+                68
+            ],
+            "level_cycles": [
+                0,
+                1,
+                10
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "132": {
+            "id": 132,
+            "coords": [
+                715,
+                309
+            ],
+            "distance": 4,
+            "relations": [
+                55,
+                186,
+                148,
+                21,
+                183,
+                73,
+                184
+            ],
+            "level_cycles": [
+                1,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4
+            ]
+        },
+        "133": {
+            "id": 133,
+            "coords": [
+                640,
+                222
+            ],
+            "distance": 1,
+            "relations": [
+                169,
+                145,
+                166,
+                40,
+                2,
+                12
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1
+            ]
+        },
+        "134": {
+            "id": 134,
+            "coords": [
+                849,
+                242
+            ],
+            "distance": 2,
+            "relations": [
+                195,
+                144,
+                167,
+                6,
+                188
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "135": {
+            "id": 135,
+            "coords": [
+                645,
+                355
+            ],
+            "distance": 4,
+            "relations": [
+                56,
+                162,
+                73,
+                78,
+                174,
+                20
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [
+                1
+            ],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "136": {
+            "id": 136,
+            "coords": [
+                753,
+                300
+            ],
+            "distance": 4,
+            "relations": [
+                61,
+                53,
+                88,
+                148,
+                186,
+                41
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                4,
+                4
+            ]
+        },
+        "137": {
+            "id": 137,
+            "coords": [
+                765,
+                421
+            ],
+            "distance": 7,
+            "relations": [
+                114,
+                165,
+                89,
+                59,
+                101,
+                4
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "138": {
+            "id": 138,
+            "coords": [
+                937,
+                640
+            ],
+            "distance": 3,
+            "relations": [
+                131,
+                13,
+                117,
+                63,
+                189
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "139": {
+            "id": 139,
+            "coords": [
+                406,
+                495
+            ],
+            "distance": 1,
+            "relations": [
+                7,
+                200,
+                108,
+                197,
+                16,
+                1,
+                179,
+                125
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "140": {
+            "id": 140,
+            "coords": [
+                543,
+                471
+            ],
+            "distance": 4,
+            "relations": [
+                157,
+                152,
+                193,
+                44,
+                79,
+                50
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4
+            ]
+        },
+        "141": {
+            "id": 141,
+            "coords": [
+                795,
+                574
+            ],
+            "distance": 3,
+            "relations": [
+                109,
+                19,
+                24,
+                67,
+                163,
+                80,
+                196
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3
+            ]
+        },
+        "142": {
+            "id": 142,
+            "coords": [
+                897,
+                548
+            ],
+            "distance": 5,
+            "relations": [
+                11,
+                75,
+                66,
+                172,
+                15
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "143": {
+            "id": 143,
+            "coords": [
+                814,
+                269
+            ],
+            "distance": 3,
+            "relations": [
+                100,
+                191,
+                195,
+                188,
+                120,
+                53,
+                111
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3
+            ]
+        },
+        "144": {
+            "id": 144,
+            "coords": [
+                878,
+                212
+            ],
+            "distance": 1,
+            "relations": [
+                72,
+                64,
+                2,
+                129,
+                167,
+                134,
+                195
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1
+            ]
+        },
+        "145": {
+            "id": 145,
+            "coords": [
+                664,
+                233
+            ],
+            "distance": 2,
+            "relations": [
+                183,
+                9,
+                166,
+                133,
+                169
+            ],
+            "level_cycles": [
+                0,
+                1,
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "146": {
+            "id": 146,
+            "coords": [
+                831,
+                351
+            ],
+            "distance": 4,
+            "relations": [
+                38,
+                54,
+                33,
+                100,
+                111,
+                61,
+                65,
+                82
+            ],
+            "level_cycles": [
+                1,
+                6,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                4,
+                4
+            ]
+        },
+        "147": {
+            "id": 147,
+            "coords": [
+                1019,
+                423
+            ],
+            "distance": 1,
+            "relations": [
+                182,
+                3,
+                64,
+                98,
+                104,
+                18,
+                173
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "148": {
+            "id": 148,
+            "coords": [
+                727,
+                281
+            ],
+            "distance": 4,
+            "relations": [
+                186,
+                136,
+                88,
+                128,
+                21,
+                132
+            ],
+            "level_cycles": [
+                1,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "149": {
+            "id": 149,
+            "coords": [
+                482,
+                449
+            ],
+            "distance": 3,
+            "relations": [
+                44,
+                193,
+                108,
+                200
+            ],
+            "level_cycles": [
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "150": {
+            "id": 150,
+            "coords": [
+                706,
+                247
+            ],
+            "distance": 3,
+            "relations": [
+                21,
+                128,
+                107,
+                9,
+                183
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "151": {
+            "id": 151,
+            "coords": [
+                629,
+                634
+            ],
+            "distance": 3,
+            "relations": [
+                5,
+                194,
+                110,
+                119,
+                95,
+                69
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        "152": {
+            "id": 152,
+            "coords": [
+                571,
+                467
+            ],
+            "distance": 4,
+            "relations": [
+                199,
+                34,
+                160,
+                32,
+                193,
+                140,
+                157
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4
+            ]
+        },
+        "153": {
+            "id": 153,
+            "coords": [
+                617,
+                383
+            ],
+            "distance": 4,
+            "relations": [
+                34,
+                56,
+                20,
+                28
+            ],
+            "level_cycles": [
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "154": {
+            "id": 154,
+            "coords": [
+                434,
+                650
+            ],
+            "distance": 3,
+            "relations": [
+                30,
+                48,
+                180,
+                46,
+                71,
+                192
+            ],
+            "level_cycles": [
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "155": {
+            "id": 155,
+            "coords": [
+                721,
+                691
+            ],
+            "distance": 1,
+            "relations": [
+                3,
+                68,
+                29,
+                196,
+                80,
+                5,
+                161,
+                1
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                0,
+                0,
+                1,
+                1
+            ]
+        },
+        "156": {
+            "id": 156,
+            "coords": [
+                589,
+                299
+            ],
+            "distance": 2,
+            "relations": [
+                91,
+                169,
+                12,
+                112
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "157": {
+            "id": 157,
+            "coords": [
+                570,
+                481
+            ],
+            "distance": 5,
+            "relations": [
+                42,
+                199,
+                152,
+                140,
+                50,
+                77
+            ],
+            "level_cycles": [
+                1,
+                5,
+                6,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "158": {
+            "id": 158,
+            "coords": [
+                709,
+                349
+            ],
+            "distance": 6,
+            "relations": [
+                59,
+                41,
+                70,
+                184,
+                96
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                0
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "159": {
+            "id": 159,
+            "coords": [
+                746,
+                509
+            ],
+            "distance": 5,
+            "relations": [
+                24,
+                178,
+                4,
+                22
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "160": {
+            "id": 160,
+            "coords": [
+                563,
+                409
+            ],
+            "distance": 3,
+            "relations": [
+                152,
+                34,
+                28,
+                23,
+                32
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "161": {
+            "id": 161,
+            "coords": [
+                606,
+                687
+            ],
+            "distance": 1,
+            "relations": [
+                155,
+                5,
+                69,
+                83,
+                198,
+                168,
+                1
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "162": {
+            "id": 162,
+            "coords": [
+                666,
+                364
+            ],
+            "distance": 5,
+            "relations": [
+                37,
+                96,
+                73,
+                135,
+                56
+            ],
+            "level_cycles": [
+                8
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        },
+        "163": {
+            "id": 163,
+            "coords": [
+                731,
+                598
+            ],
+            "distance": 3,
+            "relations": [
+                80,
+                141,
+                67,
+                62,
+                110,
+                194
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                3
+            ]
+        },
+        "164": {
+            "id": 164,
+            "coords": [
+                564,
+                567
+            ],
+            "distance": 4,
+            "relations": [
+                43,
+                8,
+                42,
+                77,
+                90
+            ],
+            "level_cycles": [
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4
+            ]
+        },
+        "165": {
+            "id": 165,
+            "coords": [
+                778,
+                402
+            ],
+            "distance": 6,
+            "relations": [
+                127,
+                65,
+                85,
+                89,
+                137,
+                114
+            ],
+            "level_cycles": [
+                1,
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5
+            ]
+        },
+        "166": {
+            "id": 166,
+            "coords": [
+                667,
+                214
+            ],
+            "distance": 2,
+            "relations": [
+                9,
+                40,
+                133,
+                145
+            ],
+            "level_cycles": [
+                1,
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "167": {
+            "id": 167,
+            "coords": [
+                847,
+                224
+            ],
+            "distance": 2,
+            "relations": [
+                134,
+                144,
+                129,
+                74,
+                6
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "168": {
+            "id": 168,
+            "coords": [
+                350,
+                686
+            ],
+            "distance": 1,
+            "relations": [
+                161,
+                198,
+                30,
+                192,
+                17,
+                115,
+                76,
+                1
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "169": {
+            "id": 169,
+            "coords": [
+                648,
+                280
+            ],
+            "distance": 2,
+            "relations": [
+                78,
+                183,
+                145,
+                133,
+                12,
+                156,
+                91
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                2
+            ]
+        },
+        "170": {
+            "id": 170,
+            "coords": [
+                910,
+                318
+            ],
+            "distance": 2,
+            "relations": [
+                118,
+                64,
+                72,
+                33,
+                54,
+                105
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "171": {
+            "id": 171,
+            "coords": [
+                1051,
+                568
+            ],
+            "distance": 2,
+            "relations": [
+                26,
+                49,
+                81,
+                116,
+                27
+            ],
+            "level_cycles": [
+                0,
+                1,
+                7
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "172": {
+            "id": 172,
+            "coords": [
+                865,
+                535
+            ],
+            "distance": 4,
+            "relations": [
+                15,
+                142,
+                66,
+                113,
+                31,
+                19,
+                109
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "173": {
+            "id": 173,
+            "coords": [
+                993,
+                478
+            ],
+            "distance": 2,
+            "relations": [
+                182,
+                147,
+                18,
+                175,
+                126
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        "174": {
+            "id": 174,
+            "coords": [
+                623,
+                339
+            ],
+            "distance": 4,
+            "relations": [
+                135,
+                78,
+                91,
+                20
+            ],
+            "level_cycles": [],
+            "level_paths": [
+                1
+            ],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3
+            ]
+        },
+        "175": {
+            "id": 175,
+            "coords": [
+                954,
+                519
+            ],
+            "distance": 3,
+            "relations": [
+                126,
+                173,
+                18,
+                35,
+                93,
+                75,
+                13
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                3
+            ]
+        },
+        "176": {
+            "id": 176,
+            "coords": [
+                704,
+                212
+            ],
+            "distance": 1,
+            "relations": [
+                107,
+                58,
+                45,
+                2,
+                40,
+                9
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "177": {
+            "id": 177,
+            "coords": [
+                422,
+                548
+            ],
+            "distance": 2,
+            "relations": [
+                46,
+                87,
+                7,
+                125,
+                179,
+                71
+            ],
+            "level_cycles": [
+                0,
+                1,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "178": {
+            "id": 178,
+            "coords": [
+                785,
+                471
+            ],
+            "distance": 5,
+            "relations": [
+                19,
+                51,
+                25,
+                99,
+                114,
+                4,
+                159,
+                24
+            ],
+            "level_cycles": [
+                0,
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                5,
+                5
+            ]
+        },
+        "179": {
+            "id": 179,
+            "coords": [
+                369,
+                544
+            ],
+            "distance": 1,
+            "relations": [
+                71,
+                177,
+                125,
+                139,
+                1,
+                76,
+                52
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1
+            ]
+        },
+        "180": {
+            "id": 180,
+            "coords": [
+                485,
+                627
+            ],
+            "distance": 3,
+            "relations": [
+                198,
+                10,
+                39,
+                84,
+                46,
+                154,
+                48
+            ],
+            "level_cycles": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "181": {
+            "id": 181,
+            "coords": [
+                662,
+                474
+            ],
+            "distance": 5,
+            "relations": [
+                123,
+                22,
+                4,
+                101,
+                37,
+                34,
+                199
+            ],
+            "level_cycles": [
+                2,
+                3,
+                4
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                5,
+                5,
+                5
+            ]
+        },
+        "182": {
+            "id": 182,
+            "coords": [
+                1059,
+                490
+            ],
+            "distance": 1,
+            "relations": [
+                49,
+                106,
+                3,
+                147,
+                173,
+                126,
+                81
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1
+            ]
+        },
+        "183": {
+            "id": 183,
+            "coords": [
+                670,
+                274
+            ],
+            "distance": 3,
+            "relations": [
+                73,
+                132,
+                21,
+                150,
+                9,
+                145,
+                169,
+                78
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "184": {
+            "id": 184,
+            "coords": [
+                707,
+                336
+            ],
+            "distance": 5,
+            "relations": [
+                158,
+                70,
+                55,
+                132,
+                73,
+                96
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5
+            ]
+        },
+        "185": {
+            "id": 185,
+            "coords": [
+                974,
+                666
+            ],
+            "distance": 2,
+            "relations": [
+                187,
+                27,
+                131,
+                68
+            ],
+            "level_cycles": [
+                1,
+                10,
+                11
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "186": {
+            "id": 186,
+            "coords": [
+                735,
+                312
+            ],
+            "distance": 5,
+            "relations": [
+                41,
+                136,
+                148,
+                132,
+                55,
+                70
+            ],
+            "level_cycles": [
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                4,
+                4,
+                4
+            ]
+        },
+        "187": {
+            "id": 187,
+            "coords": [
+                1039,
+                692
+            ],
+            "distance": 2,
+            "relations": [
+                130,
+                92,
+                27,
+                185,
+                68
+            ],
+            "level_cycles": [
+                1,
+                9,
+                11
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "188": {
+            "id": 188,
+            "coords": [
+                817,
+                247
+            ],
+            "distance": 3,
+            "relations": [
+                195,
+                134,
+                6,
+                57,
+                74,
+                120,
+                143
+            ],
+            "level_cycles": [
+                6
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "189": {
+            "id": 189,
+            "coords": [
+                924,
+                683
+            ],
+            "distance": 2,
+            "relations": [
+                68,
+                131,
+                138,
+                63,
+                29
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2
+            ]
+        },
+        "190": {
+            "id": 190,
+            "coords": [
+                1130,
+                638
+            ],
+            "distance": 1,
+            "relations": [
+                130,
+                3,
+                26,
+                94
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "191": {
+            "id": 191,
+            "coords": [
+                841,
+                280
+            ],
+            "distance": 3,
+            "relations": [
+                33,
+                195,
+                143,
+                100
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": []
+        },
+        "192": {
+            "id": 192,
+            "coords": [
+                412,
+                648
+            ],
+            "distance": 2,
+            "relations": [
+                30,
+                154,
+                71,
+                17,
+                168
+            ],
+            "level_cycles": [
+                0,
+                1,
+                2
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": []
+        },
+        "193": {
+            "id": 193,
+            "coords": [
+                525,
+                450
+            ],
+            "distance": 3,
+            "relations": [
+                140,
+                152,
+                32,
+                103,
+                108,
+                149,
+                44
+            ],
+            "level_cycles": [
+                0,
+                4,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                3,
+                3,
+                3,
+                3,
+                3
+            ]
+        },
+        "194": {
+            "id": 194,
+            "coords": [
+                699,
+                638
+            ],
+            "distance": 3,
+            "relations": [
+                80,
+                163,
+                110,
+                151,
+                5
+            ],
+            "level_cycles": [
+                0
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        "195": {
+            "id": 195,
+            "coords": [
+                854,
+                261
+            ],
+            "distance": 2,
+            "relations": [
+                33,
+                72,
+                144,
+                134,
+                188,
+                143,
+                191
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        },
+        "196": {
+            "id": 196,
+            "coords": [
+                768,
+                667
+            ],
+            "distance": 2,
+            "relations": [
+                29,
+                109,
+                141,
+                80,
+                155
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2
+            ]
+        },
+        "197": {
+            "id": 197,
+            "coords": [
+                498,
+                380
+            ],
+            "distance": 2,
+            "relations": [
+                103,
+                23,
+                16,
+                139,
+                108
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1
+            ]
+        },
+        "198": {
+            "id": 198,
+            "coords": [
+                500,
+                681
+            ],
+            "distance": 2,
+            "relations": [
+                161,
+                83,
+                10,
+                180,
+                48,
+                30,
+                168
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2
+            ]
+        },
+        "199": {
+            "id": 199,
+            "coords": [
+                616,
+                496
+            ],
+            "distance": 5,
+            "relations": [
+                123,
+                181,
+                34,
+                152,
+                157,
+                42,
+                8
+            ],
+            "level_cycles": [
+                1,
+                4,
+                5
+            ],
+            "level_paths": [],
+            "is_root_element": true,
+            "betweener_paths": [
+                4,
+                4
+            ]
+        },
+        "200": {
+            "id": 200,
+            "coords": [
+                456,
+                463
+            ],
+            "distance": 2,
+            "relations": [
+                87,
+                44,
+                149,
+                108,
+                139,
+                7
+            ],
+            "level_cycles": [
+                0,
+                1
+            ],
+            "level_paths": [],
+            "is_root_element": false,
+            "betweener_paths": [
+                2,
+                2,
+                2
+            ]
+        }
+    },
+    "levels": [
+        {
+            "node_ids": [
+                1,
+                2,
+                3
+            ],
+            "cycles": [
+                [
+                    3,
+                    1,
+                    2
+                ]
+            ],
+            "paths": []
+        },
+        {
+            "node_ids": [
+                155,
+                161,
+                168,
+                76,
+                179,
+                139,
+                16,
+                12,
+                45,
+                129,
+                144,
+                64,
+                133,
+                40,
+                176,
+                147,
+                182,
+                106,
+                26,
+                190,
+                130,
+                68
+            ],
+            "cycles": [
+                [
+                    68,
+                    155,
+                    161,
+                    168,
+                    76,
+                    179,
+                    139,
+                    16,
+                    12,
+                    133,
+                    40,
+                    176,
+                    45,
+                    129,
+                    144,
+                    64,
+                    147,
+                    182,
+                    106,
+                    26,
+                    190,
+                    130
+                ]
+            ],
+            "paths": []
+        },
+        {
+            "node_ids": [
+                29,
+                196,
+                80,
+                5,
+                69,
+                83,
+                198,
+                30,
+                192,
+                17,
+                115,
+                52,
+                71,
+                177,
+                125,
+                7,
+                200,
+                108,
+                197,
+                23,
+                97,
+                112,
+                169,
+                156,
+                102,
+                120,
+                74,
+                58,
+                167,
+                72,
+                134,
+                195,
+                122,
+                98,
+                170,
+                118,
+                145,
+                166,
+                9,
+                107,
+                104,
+                18,
+                173,
+                49,
+                126,
+                81,
+                171,
+                27,
+                94,
+                92,
+                187,
+                185,
+                131,
+                189
+            ],
+            "cycles": [
+                [
+                    189,
+                    29,
+                    196,
+                    80,
+                    5,
+                    69,
+                    83,
+                    198,
+                    30,
+                    192,
+                    71,
+                    177,
+                    7,
+                    200,
+                    108,
+                    197,
+                    23,
+                    97,
+                    112,
+                    156,
+                    169,
+                    145,
+                    9,
+                    107,
+                    58,
+                    102,
+                    120,
+                    74,
+                    167,
+                    134,
+                    195,
+                    72,
+                    170,
+                    118,
+                    122,
+                    98,
+                    104,
+                    18,
+                    173,
+                    126,
+                    81,
+                    171,
+                    27,
+                    131
+                ],
+                [
+                    29,
+                    189,
+                    131,
+                    185,
+                    187,
+                    92,
+                    94,
+                    27,
+                    171,
+                    49,
+                    81,
+                    126,
+                    173,
+                    18,
+                    104,
+                    98,
+                    122,
+                    118,
+                    170,
+                    72,
+                    195,
+                    134,
+                    167,
+                    74,
+                    120,
+                    102,
+                    58,
+                    107,
+                    9,
+                    166,
+                    145,
+                    169,
+                    156,
+                    112,
+                    97,
+                    23,
+                    197,
+                    108,
+                    200,
+                    7,
+                    125,
+                    177,
+                    71,
+                    52,
+                    115,
+                    17,
+                    192,
+                    30,
+                    198,
+                    83,
+                    69,
+                    5,
+                    80,
+                    196
+                ],
+                [
+                    71,
+                    192,
+                    17
+                ],
+                [
+                    71,
+                    17,
+                    52
+                ],
+                [
+                    52,
+                    17,
+                    115
+                ],
+                [
+                    7,
+                    177,
+                    125
+                ],
+                [
+                    9,
+                    145,
+                    166
+                ],
+                [
+                    81,
+                    49,
+                    171
+                ],
+                [
+                    92,
+                    27,
+                    94
+                ],
+                [
+                    27,
+                    92,
+                    187
+                ],
+                [
+                    131,
+                    27,
+                    185
+                ],
+                [
+                    185,
+                    27,
+                    187
+                ]
+            ],
+            "paths": []
+        },
+        {
+            "node_ids": [
+                63,
+                109,
+                141,
+                163,
+                194,
+                151,
+                95,
+                43,
+                39,
+                10,
+                180,
+                48,
+                154,
+                46,
+                87,
+                44,
+                149,
+                193,
+                103,
+                160,
+                28,
+                20,
+                32,
+                91,
+                78,
+                183,
+                53,
+                88,
+                143,
+                188,
+                57,
+                6,
+                128,
+                33,
+                191,
+                47,
+                105,
+                54,
+                150,
+                124,
+                35,
+                175,
+                116,
+                13,
+                138
+            ],
+            "cycles": [
+                [
+                    138,
+                    63,
+                    109,
+                    141,
+                    163,
+                    194,
+                    151,
+                    95,
+                    43,
+                    39,
+                    180,
+                    46,
+                    87,
+                    44,
+                    193,
+                    32,
+                    160,
+                    28,
+                    20,
+                    91,
+                    78,
+                    183,
+                    150,
+                    128,
+                    88,
+                    53,
+                    143,
+                    191,
+                    33,
+                    54,
+                    105,
+                    47,
+                    124,
+                    35,
+                    175,
+                    13
+                ],
+                [
+                    39,
+                    10,
+                    180
+                ],
+                [
+                    46,
+                    180,
+                    154
+                ],
+                [
+                    154,
+                    180,
+                    48
+                ],
+                [
+                    193,
+                    44,
+                    149
+                ],
+                [
+                    32,
+                    193,
+                    103
+                ],
+                [
+                    188,
+                    6,
+                    57
+                ]
+            ],
+            "paths": [
+                [
+                    116,
+                    13
+                ]
+            ]
+        },
+        {
+            "node_ids": [
+                117,
+                15,
+                172,
+                19,
+                24,
+                67,
+                62,
+                110,
+                119,
+                8,
+                164,
+                90,
+                14,
+                84,
+                86,
+                79,
+                140,
+                152,
+                34,
+                153,
+                56,
+                135,
+                174,
+                73,
+                132,
+                21,
+                111,
+                136,
+                61,
+                148,
+                100,
+                146,
+                38,
+                121,
+                113,
+                93,
+                75,
+                11
+            ],
+            "cycles": [
+                [
+                    11,
+                    15,
+                    172,
+                    113,
+                    93,
+                    75
+                ],
+                [
+                    113,
+                    172,
+                    19,
+                    24,
+                    67,
+                    62,
+                    110,
+                    119,
+                    8,
+                    164,
+                    90,
+                    86,
+                    79,
+                    140,
+                    152,
+                    34,
+                    56,
+                    135,
+                    73,
+                    132,
+                    148,
+                    136,
+                    61,
+                    146,
+                    38,
+                    121
+                ],
+                [
+                    86,
+                    90,
+                    14
+                ],
+                [
+                    86,
+                    14,
+                    84
+                ],
+                [
+                    56,
+                    34,
+                    153
+                ],
+                [
+                    148,
+                    132,
+                    21
+                ],
+                [
+                    146,
+                    111,
+                    100
+                ],
+                [
+                    111,
+                    146,
+                    61
+                ]
+            ],
+            "paths": [
+                [
+                    117,
+                    15
+                ],
+                [
+                    174,
+                    135
+                ]
+            ]
+        },
+        {
+            "node_ids": [
+                142,
+                66,
+                31,
+                51,
+                178,
+                159,
+                22,
+                123,
+                36,
+                199,
+                42,
+                77,
+                50,
+                157,
+                181,
+                37,
+                162,
+                184,
+                96,
+                55,
+                186,
+                41,
+                65,
+                85,
+                82,
+                60,
+                25
+            ],
+            "cycles": [
+                [
+                    25,
+                    51,
+                    178
+                ],
+                [
+                    199,
+                    157,
+                    50,
+                    77,
+                    42
+                ],
+                [
+                    25,
+                    178,
+                    159,
+                    22,
+                    181,
+                    37,
+                    96,
+                    184,
+                    55,
+                    186,
+                    41,
+                    85,
+                    65,
+                    60
+                ],
+                [
+                    181,
+                    22,
+                    123
+                ],
+                [
+                    181,
+                    123,
+                    199
+                ],
+                [
+                    157,
+                    199,
+                    42
+                ],
+                [
+                    157,
+                    42,
+                    77
+                ],
+                [
+                    157,
+                    77,
+                    50
+                ],
+                [
+                    96,
+                    37,
+                    162
+                ],
+                [
+                    60,
+                    65,
+                    82
+                ]
+            ],
+            "paths": [
+                [
+                    142,
+                    66
+                ],
+                [
+                    31,
+                    51
+                ],
+                [
+                    36,
+                    123
+                ]
+            ]
+        },
+        {
+            "node_ids": [
+                99,
+                114,
+                4,
+                101,
+                59,
+                158,
+                70,
+                89,
+                165,
+                127
+            ],
+            "cycles": [
+                [
+                    127,
+                    99,
+                    114
+                ],
+                [
+                    127,
+                    114,
+                    165
+                ],
+                [
+                    165,
+                    114,
+                    4,
+                    101,
+                    59,
+                    89
+                ],
+                [
+                    59,
+                    101,
+                    4,
+                    114,
+                    99,
+                    127,
+                    165,
+                    89
+                ]
+            ],
+            "paths": [
+                [
+                    158,
+                    59,
+                    70
+                ]
+            ]
+        },
+        {
+            "node_ids": [
+                137
+            ],
+            "cycles": [],
+            "paths": [
+                [
+                    137
+                ]
+            ]
+        }
+    ]
+}

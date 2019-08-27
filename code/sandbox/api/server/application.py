@@ -31,7 +31,8 @@ def planar_graph(seed):
 @APP.route('/planar-graphs/<seed>/graph.svg', methods=['GET'])
 def planar_graph_svg(seed):
     """ generates an svg for the given graph """
-    triangle = MaximallyConnectedPlanarGraph(seed)
+    num_points = request.args.get('num-points', default=200, type=int)
+    triangle = MaximallyConnectedPlanarGraph(seed, num_points=num_points)
     slice_origin_id = request.args.get('slice-origin-id', default=None, type=int)
     reverse_slice = request.args.get('reverse-slice', default=False, type=bool)
     colored_nodes = dict(request.args)

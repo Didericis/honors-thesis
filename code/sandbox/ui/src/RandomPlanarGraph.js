@@ -15,6 +15,7 @@ export default class RandomPlanarGraph extends Component {
     this.getUrl = this.getUrl.bind(this);
     this.createNewGraph = this.createNewGraph.bind(this);
     this.registerClickHandlers = this.registerClickHandlers.bind(this);
+    this.setNumPointsInNewGraph = this.setNumPointsInNewGraph.bind(this);
     this.toggleMode = this.toggleMode.bind(this);
   }
 
@@ -23,6 +24,7 @@ export default class RandomPlanarGraph extends Component {
     coloredNodes: {},
     graphs: [],
     seed: null,
+    numPointsInNewGraph: 200,
     sliceOrigin: null,
     mode: this.MODES[0]
   }
@@ -41,16 +43,21 @@ export default class RandomPlanarGraph extends Component {
     this.setState({ seed: this.generateSeed() });
   }
 
+  setNumPointsInNewGraph(e) {
+    this.setState({ numPointsInNewGraph: e.target.value });
+  }
+
   generateSeed() {
     return String(Math.random() * Math.pow(10, 17));
   }
 
   getUrl() {
-    const { seed, sliceOrigin, colors, mode } = this.state;
+    const { seed, sliceOrigin, colors, numPointsInNewGraph, mode } = this.state;
     let url = api.url + `/planar-graphs/${seed}/graph.svg`;
     const query = [];
     if (sliceOrigin) query.push(`slice-origin-id=${sliceOrigin}`);
     if (mode === 'reverseStrip') query.push('reverse-slice=True');
+    if (numPointsInNewGraph) query.push(`num-points=${numPointsInNewGraph}`);
     if (colors) {
       Object.keys(colors).forEach((id) => {
         query.push(`${id}=${colors[id]}`);
@@ -123,7 +130,7 @@ export default class RandomPlanarGraph extends Component {
   }
 
   render() {
-    const { mode, seed, selectedColor } = this.state;
+    const { mode, seed, numPointsInNewGraph, selectedColor } = this.state;
     return (
       <div className='row'>
         <div className='column'>
@@ -142,14 +149,18 @@ export default class RandomPlanarGraph extends Component {
         </div>
         <div className='column'>
           <div className='row'>
-            <button onClick={this.createNewGraph}>Regenerate</button>
+            <label>Points in new graph:</label>
+            <input value={numPointsInNewGraph} onChange={this.setNumPointsInNewGraph} />
+            <button onClick={this.createNewGraph}>Create Graph</button>
+          </div>
+          <div className='row'>
+            <button onClick={this.toggleMode}>Mode: {mode}</button>
             <button style={{ backgroundColor: 'blue' }} onClick={this.selectColor.bind(this, 'blue')}>Blue</button>
             <button style={{ backgroundColor: 'red' }} onClick={this.selectColor.bind(this, 'red')}>Red</button>
             <button style={{ backgroundColor: 'yellow' }} onClick={this.selectColor.bind(this, 'yellow')}>Yellow</button>
             <button style={{ backgroundColor: 'green' }} onClick={this.selectColor.bind(this, 'green')}>Green</button>
             <button style={{ backgroundColor: 'white' }} onClick={this.selectColor.bind(this, 'white')}>White</button>
             <span style={{ color: selectedColor }}>Selected: { selectedColor }</span>
-            <button onClick={this.toggleMode}>Mode: {mode}</button>
           </div>
           <div className='row'>
             <UncontrolledReactSVGPanZoom

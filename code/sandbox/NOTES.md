@@ -37,3 +37,11 @@ Consider any arbitrary embedding of a graph in the plane that is maximally plana
   - Cannot always alternate two colors around a level cycle with only 1 exception
 - [OBSERVATION 2](observation_2.png):
   - Going counter clockwise with first sequence and only moving up a level on the last edge on a node with multiple edges between levels does results in conflicts when going up via same pattern with second sequence
+
+
+### TODO:
+
+- [x] Add ability to specify nodes when creating new graphs
+- [ ] Add ability to print graph info to site
+- [ ] Add ability to list and select level elements
+- [ ] Add ability to fold level elements and save intermediary svg steps

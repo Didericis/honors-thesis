@@ -47,7 +47,7 @@ class MaximallyConnectedPlanarGraph():
         return []
 
     @staticmethod
-    def generate_triangle(seed):
+    def generate_triangle(seed, num_points=200):
         """
         Generates a random maximally planar graph for a given seed value
         using the "triangle" library (output stored in triagle format)
@@ -58,7 +58,7 @@ class MaximallyConnectedPlanarGraph():
             1500: 751
         }
         random.seed(seed)
-        while len(points) < 200:
+        while len(points) < num_points:
             y_coord = (random.randrange(500) or 1) + 200
             x_coord = random.randrange(round(y_coord*4/3)) + round((500 - y_coord)*(3/4)) + 400
             if (not points.get(x_coord)) and (x_coord != 750):
@@ -79,7 +79,7 @@ class MaximallyConnectedPlanarGraph():
 
         call(['triangle', '-e', filepath])
 
-    def __init__(self, seed):
+    def __init__(self, seed, num_points=None):
         self.files = {
             'node': os.path.join(DATA_DIR, '{}/triangle.1.node'.format(seed)),
             'edge': os.path.join(DATA_DIR, '{}/triangle.1.edge'.format(seed)),
@@ -92,10 +92,15 @@ class MaximallyConnectedPlanarGraph():
         self.levels = []
 
         if not os.path.exists(os.path.join(DATA_DIR, seed)):
-            MaximallyConnectedPlanarGraph.generate_triangle(seed)
+            MaximallyConnectedPlanarGraph.generate_triangle(seed, num_points)
             self.nodes, self.boundary_nodes, self.levels = self.parse_triangle_files()
             self.save_data_file()
         else:
+            # NB: this is bad design. We should be explicitly creating graphs with points,
+            #     and loading separately, not overloading initializiation like this,
+            #     but it doesn't seem worth fixing
+            if num_points:
+                print('Ignoring num_points (retrieving existing graph)')
             self.load_data_file()
             # TEMP
             self.nodes, self.boundary_nodes, self.levels = self.parse_triangle_files()

@@ -1,5 +1,5 @@
 Flask==0.10.0
 gunicorn==19.9.0
-flask-cors==3.0.7
+flask-cors==3.0.9
 Flask-Script
 numpy
